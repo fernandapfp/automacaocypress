@@ -1,0 +1,102 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-09-17T16:41:31.727Z",
+    "end": "2020-09-17T16:42:00.581Z",
+    "duration": 28854,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7521e5eb-8061-42c7-8a3a-f398dd0cb1c8",
+      "title": "",
+      "fullFile": "cypress\\integration\\Renegociacao.feature",
+      "file": "cypress\\integration\\Renegociacao.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a3df046e-d28d-432c-96ba-62b59af96f55",
+          "title": "Acessar Renegociação Crefisa",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Acessar a página Agente Crefisa",
+              "fullTitle": "Acessar Renegociação Crefisa Acessar a página Agente Crefisa",
+              "timedOut": null,
+              "duration": 28803,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "754240d3-7eac-4b1e-b4de-e3743b6fd3d4",
+              "parentUUID": "a3df046e-d28d-432c-96ba-62b59af96f55",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "754240d3-7eac-4b1e-b4de-e3743b6fd3d4"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 28803,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false
+      },
+      "version": "5.1.0"
+    }
+  }
+}

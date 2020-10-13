@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-09-16T18:38:19.806Z",
+    "end": "2020-09-16T18:38:51.997Z",
+    "duration": 32191,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e7fd7ce3-691c-4903-8753-0916c635e4b2",
+      "title": "",
+      "fullFile": "cypress\\integration\\Renegociacao.feature",
+      "file": "cypress\\integration\\Renegociacao.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c36a5de1-7e05-41f0-9135-fb1e22230b15",
+          "title": "Acessar Renegociação Crefisa",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Acessar a página Agente Crefisa",
+              "fullTitle": "Acessar Renegociação Crefisa Acessar a página Agente Crefisa",
+              "timedOut": null,
+              "duration": 32096,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find element: `feature-card__cta order-4 btn bg-orange py-4 text-white text-uppercase`, but never found it.",
+                "estack": "AssertionError: Timed out retrying: Expected to find element: `feature-card__cta order-4 btn bg-orange py-4 text-white text-uppercase`, but never found it.\n    at RenegociacaoPage.renegociacao (https://www.crefisa.com.br/__cypress/tests?p=cypress\\integration\\Renegociacao.feature:639:10)\n    at Context.eval (https://www.crefisa.com.br/__cypress/tests?p=cypress\\integration\\Renegociacao.feature:817:20)\n    at Context.resolveAndRunStepDefinition (https://www.crefisa.com.br/__cypress/tests?p=cypress\\integration\\Renegociacao.feature:11234:9)\n    at Context.eval (https://www.crefisa.com.br/__cypress/tests?p=cypress\\integration\\Renegociacao.feature:10576:35)",
+                "diff": null
+              },
+              "uuid": "b22bfc69-11a5-44b9-ba0a-cc769c4768d8",
+              "parentUUID": "c36a5de1-7e05-41f0-9135-fb1e22230b15",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "b22bfc69-11a5-44b9-ba0a-cc769c4768d8"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 32096,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false
+      },
+      "version": "5.1.0"
+    }
+  }
+}

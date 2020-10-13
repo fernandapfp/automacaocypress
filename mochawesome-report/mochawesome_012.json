@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-09-16T13:47:26.968Z",
+    "end": "2020-09-16T13:48:03.658Z",
+    "duration": 36690,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "da2a24ed-d1e2-45a7-a948-b145700214f6",
+      "title": "",
+      "fullFile": "cypress\\integration\\Cartoes.feature",
+      "file": "cypress\\integration\\Cartoes.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8a7fae98-495f-4b15-b3e6-4b7684d84ccb",
+          "title": "Acessar Cartões Crefisa",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Acessar a página Agente Crefisa",
+              "fullTitle": "Acessar Cartões Crefisa Acessar a página Agente Crefisa",
+              "timedOut": null,
+              "duration": 36590,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find content: 'Para Você' within the element: <button#agende-visita--para-voce.btn.bg-orange.> but never did.",
+                "estack": "AssertionError: Timed out retrying: Expected to find content: 'Para Você' within the element: <button#agende-visita--para-voce.btn.bg-orange.> but never did.\n    at CartoesPage.paraVoce (https://www.crefisa.com.br/__cypress/tests?p=cypress\\integration\\Cartoes.feature:289:42)\n    at Context.eval (https://www.crefisa.com.br/__cypress/tests?p=cypress\\integration\\Cartoes.feature:496:15)\n    at Context.resolveAndRunStepDefinition (https://www.crefisa.com.br/__cypress/tests?p=cypress\\integration\\Cartoes.feature:10967:9)\n    at Context.eval (https://www.crefisa.com.br/__cypress/tests?p=cypress\\integration\\Cartoes.feature:10309:35)",
+                "diff": null
+              },
+              "uuid": "a3cd53b0-72d9-4d80-a16d-88d2e122e636",
+              "parentUUID": "8a7fae98-495f-4b15-b3e6-4b7684d84ccb",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "a3cd53b0-72d9-4d80-a16d-88d2e122e636"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 36590,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false
+      },
+      "version": "5.1.0"
+    }
+  }
+}

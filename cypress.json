@@ -1,0 +1,15 @@
+{
+    "viewportWidth": 1920,
+    "viewportHeight": 1080,
+    "defaultCommandTimeout": 4000,
+    "baseUrl": "https://www.crefisa.com.br",
+    "video" : true,
+    "videoCompression": 32,
+    "videoUploadOnPasses": true,
+
+    
+    "reporter": "mochawesome",
+  "reporterOptions": {
+    "overwrite": false
+  }
+}

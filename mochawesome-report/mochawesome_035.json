@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-09-17T13:56:50.845Z",
+    "end": "2020-09-17T13:56:58.082Z",
+    "duration": 7237,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "69e36026-616e-42a0-8f3e-dc6e77084dd3",
+      "title": "",
+      "fullFile": "cypress\\integration\\Agente.feature",
+      "file": "cypress\\integration\\Agente.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d559bb62-c2b1-4bb0-a971-95f2fbbdc74d",
+          "title": "Acessar Agente Crefisa",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Acessar a página Agente Crefisa",
+              "fullTitle": "Acessar Agente Crefisa Acessar a página Agente Crefisa",
+              "timedOut": null,
+              "duration": 7170,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "TypeError: Agentepage.screenshot is not a function",
+                "estack": "TypeError: Agentepage.screenshot is not a function\n    at Context.eval (https://www.crefisa.com.br/__cypress/tests?p=cypress\\integration\\Agente.feature:788:14)\n    at Context.resolveAndRunStepDefinition (https://www.crefisa.com.br/__cypress/tests?p=cypress\\integration\\Agente.feature:11381:9)\n    at Context.eval (https://www.crefisa.com.br/__cypress/tests?p=cypress\\integration\\Agente.feature:10723:35)",
+                "diff": null
+              },
+              "uuid": "3e65c0d3-691c-405e-b7e5-0dc111d28ce4",
+              "parentUUID": "d559bb62-c2b1-4bb0-a971-95f2fbbdc74d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "3e65c0d3-691c-405e-b7e5-0dc111d28ce4"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 7170,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false
+      },
+      "version": "5.1.0"
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-09-16T20:04:35.964Z",
+    "end": "2020-09-16T20:05:32.386Z",
+    "duration": 56422,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "96e48706-b184-462b-9316-519e8c257be1",
+      "title": "",
+      "fullFile": "cypress\\integration\\Duplicatas.feature",
+      "file": "cypress\\integration\\Duplicatas.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "497e583d-8b08-4454-b6ca-f317a4a2559e",
+          "title": "Acessar Duplicatas Crefisa",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Acessar a página Agente Crefisa",
+              "fullTitle": "Acessar Duplicatas Crefisa Acessar a página Agente Crefisa",
+              "timedOut": null,
+              "duration": 56276,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find content: 'Para Você' within the element: <h3.agende-visita-modal__title> but never did.",
+                "estack": "AssertionError: Timed out retrying: Expected to find content: 'Para Você' within the element: <h3.agende-visita-modal__title> but never did.\n    at DuplicatasPage.validaTitulo (https://www.crefisa.com.br/__cypress/tests?p=cypress\\integration\\Duplicatas.feature:638:50)\n    at Context.eval (https://www.crefisa.com.br/__cypress/tests?p=cypress\\integration\\Duplicatas.feature:929:18)\n    at Context.resolveAndRunStepDefinition (https://www.crefisa.com.br/__cypress/tests?p=cypress\\integration\\Duplicatas.feature:11391:9)\n    at Context.eval (https://www.crefisa.com.br/__cypress/tests?p=cypress\\integration\\Duplicatas.feature:10733:35)",
+                "diff": null
+              },
+              "uuid": "e01901c7-191b-41aa-a22d-238fb8b287d8",
+              "parentUUID": "497e583d-8b08-4454-b6ca-f317a4a2559e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "e01901c7-191b-41aa-a22d-238fb8b287d8"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 56276,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false
+      },
+      "version": "5.1.0"
+    }
+  }
+}

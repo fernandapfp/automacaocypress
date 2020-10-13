@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-10-08T19:51:36.121Z",
+    "end": "2020-10-08T19:52:02.379Z",
+    "duration": 26258,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "29d5a586-ff70-427d-a8cc-bf279adf353a",
+      "title": "",
+      "fullFile": "cypress\\integration\\Cambio.feature",
+      "file": "cypress\\integration\\Cambio.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "09fdf6e7-58f3-461f-a278-7d35d5d6825e",
+          "title": "Acessar Câmbio Crefisa",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Acessar a página Agente Crefisa",
+              "fullTitle": "Acessar Câmbio Crefisa Acessar a página Agente Crefisa",
+              "timedOut": null,
+              "duration": 26138,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find element: `.cambio-form__next > .btn`, but never found it.",
+                "estack": "AssertionError: Timed out retrying: Expected to find element: `.cambio-form__next > .btn`, but never found it.\n    at CambioPage.continuar (https://www.crefisa.com.br/__cypress/tests?p=cypress\\integration\\Cambio.feature:390:10)\n    at Context.eval (https://www.crefisa.com.br/__cypress/tests?p=cypress\\integration\\Cambio.feature:828:14)\n    at Context.resolveAndRunStepDefinition (https://www.crefisa.com.br/__cypress/tests?p=cypress\\integration\\Cambio.feature:11390:9)\n    at Context.eval (https://www.crefisa.com.br/__cypress/tests?p=cypress\\integration\\Cambio.feature:10732:35)",
+                "diff": null
+              },
+              "uuid": "9c5e3a61-f89b-4502-8905-0ab6827ec46f",
+              "parentUUID": "09fdf6e7-58f3-461f-a278-7d35d5d6825e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "9c5e3a61-f89b-4502-8905-0ab6827ec46f"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 26138,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false
+      },
+      "version": "5.1.0"
+    }
+  }
+}

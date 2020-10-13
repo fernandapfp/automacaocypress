@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-10-08T14:19:41.345Z",
+    "end": "2020-10-08T14:20:06.023Z",
+    "duration": 24678,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d8b9db50-ba5f-4508-9b12-596ab62dbc05",
+      "title": "",
+      "fullFile": "cypress\\integration\\Cambio.feature",
+      "file": "cypress\\integration\\Cambio.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a4f6a4b0-475b-4293-a029-da7f443afb2f",
+          "title": "Acessar Câmbio Crefisa",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Acessar a página Agente Crefisa",
+              "fullTitle": "Acessar Câmbio Crefisa Acessar a página Agente Crefisa",
+              "timedOut": null,
+              "duration": 24565,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find content: 'Faça uma simulação' within the element: <a.feature-card__cta.order-4.btn.bg-orange.py-4.text-white.text-uppercase> but never did.",
+                "estack": "AssertionError: Timed out retrying: Expected to find content: 'Faça uma simulação' within the element: <a.feature-card__cta.order-4.btn.bg-orange.py-4.text-white.text-uppercase> but never did.\n    at CambioPage.facaSimulacao (https://www.crefisa.com.br/__cypress/tests?p=cypress\\integration\\Cambio.feature:382:54)\n    at Context.eval (https://www.crefisa.com.br/__cypress/tests?p=cypress\\integration\\Cambio.feature:823:14)\n    at Context.resolveAndRunStepDefinition (https://www.crefisa.com.br/__cypress/tests?p=cypress\\integration\\Cambio.feature:11389:9)\n    at Context.eval (https://www.crefisa.com.br/__cypress/tests?p=cypress\\integration\\Cambio.feature:10731:35)",
+                "diff": null
+              },
+              "uuid": "17e18f57-923a-49b0-a242-e4e21cd44333",
+              "parentUUID": "a4f6a4b0-475b-4293-a029-da7f443afb2f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "17e18f57-923a-49b0-a242-e4e21cd44333"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 24565,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false
+      },
+      "version": "5.1.0"
+    }
+  }
+}
